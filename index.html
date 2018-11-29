@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Milestone Project</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC-7qQ9XfQxAguFtTvK1O7kU9sUjBAG9Q&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+
 
 </head>
 
 <body id="background-color">
     <header>
-
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img class="image-size" alt="Brand" src="assets/images/index.jpg">
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
-    
-    <div id="maps"></div>
-    
+
     <div class="searchbar-center">
         <input type="search" id="search" placeholder="Search" />
     </div>
+
+    <div id="map"></div>
 
 </body>
 
