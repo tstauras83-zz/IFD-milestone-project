@@ -9,31 +9,35 @@
 
 /*////////////////////////////////////Map styles///////////////////////////////////////*/
 
-html,
-body,
-div#map {
-    margin: 0;
-    padding: 0;
-    height: 360px;
+#map {
+    margin: 0px;
+    padding: 10px;
+    height: 500px;
+    width: auto;
 }
 
-#maps-message{
+#maps-message {
     text-align: center;
     color: #ffffff;
 }
 
-/*////////////////////////////////////address search bar///////////////////////////////////////*/
+/*////////////////////////////////////location and destination search area///////////////////////////////////////*/
 
 #address-searchBar {
-        position: fixed;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
+    position: relative;
+    left: 0%;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 25px;
+    background-color: #49433f;
+    color: #ffffff;
+    padding:5px;
+}
 
+
+#address-searchBar2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    padding: 10px;
+}

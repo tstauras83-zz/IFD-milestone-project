@@ -29,10 +29,32 @@
     </header>
 
     <div id="address-searchBar">
-        <input id="searchBoxx" type="textbox" value="Kaunas, Lithuania" placeholder="Search"/>
-        <input onclick="deleteMarkers();" type="button" value="Delete non-geocode markers"/>
+        <div id="type-selector" class="pac-controls">
+            <input type="radio" name="type" id="changetype-all" checked="checked">
+            <label for="changetype-all">All</label>
+
+            <input type="radio" name="type" id="changetype-accommodation">
+            <label for="changetype-accommodation">Accommodation</label>
+
+            <input type="radio" name="type" id="changetype-attractions">
+            <label for="changetype-attractions">Tourist Attractions</label>
+
+            <input type="radio" name="type" id="changetype-restaurants">
+            <label for="changetype-restaurants">Bars & Restaurants</label>
+        </div>
+    </div>
+    <div id="address-searchBar2">
+        <input id="searchBoxx" type="textbox" value="Kaunas, Lithuania" placeholder="Search" />
+        <input onclick="deleteMarkers();" type="button" value="Delete placed markers" />
     </div>
     <div id="map"></div>
+
+    <div id="listing">
+        <table id="resultsTable">
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+
 
     <footer>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC-7qQ9XfQxAguFtTvK1O7kU9sUjBAG9Q&libraries=places&callback=initMap"></script>
