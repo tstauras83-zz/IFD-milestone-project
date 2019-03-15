@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="assets/js/hotelSearch.js"></script>
     <title>Milestone Project</title>
 
 
@@ -28,24 +29,10 @@
         </nav>
     </header>
 
-    <div id="address-searchBar">
-        <div id="type-selector" class="pac-controls">
-            <input type="radio" name="type" id="changetype-all" checked="checked">
-            <label for="changetype-all">All</label>
 
-            <input type="radio" name="type" id="changetype-accommodation">
-            <label for="changetype-accommodation">Accommodation</label>
-
-            <input type="radio" name="type" id="changetype-attractions">
-            <label for="changetype-attractions">Tourist Attractions</label>
-
-            <input type="radio" name="type" id="changetype-restaurants">
-            <label for="changetype-restaurants">Bars & Restaurants</label>
-        </div>
-    </div>
     <div id="address-searchBar2">
         <input id="searchBoxx" type="textbox" value="Kaunas, Lithuania" placeholder="Search" />
-        <input onclick="deleteMarkers();" type="button" value="Delete placed markers" />
+        <input onclick="deleteMarkers();" type="button" value="Delete manually placed markers" /> 
     </div>
     <div id="map"></div>
 
@@ -54,6 +41,7 @@
             <tbody id="results"></tbody>
         </table>
     </div>
+
 
 
     <footer>
